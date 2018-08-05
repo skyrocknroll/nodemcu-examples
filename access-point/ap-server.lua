@@ -1,6 +1,6 @@
 wifi.setmode(wifi.SOFTAP)
 wifi.ap.config({ssid="test",pwd="12345678"})
--- onboard LED
+-- onboard LED mapped to D4 pin 
 ledPin=4
 gpio.mode(ledPin, gpio.OUTPUT)
 srv=net.createServer(net.TCP)
